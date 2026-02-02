@@ -1,0 +1,47 @@
+@import url(/components/style.css);
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 40px;
+    width: auto;
+}
+
+.header__titulo {
+    color: var(--cor-primaria);
+}
+
+ .header__lupa {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+} 
+
+.header__botao__lupa {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.header__input__pesquisa {
+    width: 0;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    opacity: 0;
+    transition: width .18s ease, opacity .18s ease, padding .18s ease, border-color .18s;
+    font-size: 14px;
+}
+
+.header__lupa.open .header__input__pesquisa {
+    width: 180px;
+    padding: 6px 8px;
+    border-color: #ccc;
+    opacity: 1;
+}

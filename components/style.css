@@ -1,0 +1,16 @@
+@import url(/components/styles/header.css);
+
+:root {
+    --cor-primaria: #DE21B2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
